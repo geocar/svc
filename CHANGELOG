@@ -1,0 +1,64 @@
+2007-04-19 21:53  geocar
+
+	* unix/wait-trigger.c: define exit
+
+2007-02-27 19:42  geocar
+
+	* unix/lockf.c: typo
+
+2006-01-11 13:24  geocar
+
+	* unix/ttywrap.c: handle exit cleanly; start with echo off
+
+2005-03-03 07:40  geocar
+
+	* common/lock.c: use lockf on solaris; support for lockf
+
+2004-10-08 19:28  geocar
+
+	* unix/wait-trigger.c: wait-trigger honors umask now, smtpd doesn't
+	  fail on rbl failure adding identd server (with special magic!)
+
+2004-09-30 15:09  geocar
+
+	* unix/: wait-trigger.c, pull-trigger.c: adding new tools for
+	  trigger-watching
+
+2004-08-19 23:40  geocar
+
+	* unix/lockf.c: smtpd rbl logging support; new tool "lockf"
+
+2004-06-09 20:08  geocar
+
+	* unix/sleep-svc.c, common/lock.c: make the locking code sane, add
+	  tracing code to batsh, error reporting to maildir, shorter
+	  journal names, overflow fixes to batsh, sanity fixes.  batsh now
+	  works properly. smtpd now puts timeofday in received header to
+	  get a better picture on concurrency. svfilter deliver script now
+	  works in sandbox, and better error reporting for sf-check.
+
+2004-05-31 15:45  geocar
+
+	* unix/sleep-svc.c, common/lock.c: moved locking, also finished
+	  batsh and added to deploy scripts
+
+2004-05-10 16:41  geocar
+
+	* unix/sleep-svc.c: get the initials in... move for dspam.
+	  workaround for solaris compile bug in sleep-svc and smtpd,
+
+2003-04-14 13:45  geocar
+
+	* unix/sleep-svc.c: sleep-svc.c added to CVS/bh3. lots of changes
+	  from new_server tars/notes. this one has fghack-like powers, and
+	  locks the pidfile in an attempt to "detect" if another sleep-svc
+	  is running.
+
+2003-01-23 20:19  geocar
+
+	* unix/ttywrap.c: Initial revision
+
+2003-01-23 20:19  geocar
+
+	* unix/ttywrap.c: Loaded into CVS
+
